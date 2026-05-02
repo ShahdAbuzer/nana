@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profile</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h2>Google Profile</h2>
+
+<p><strong>Name:</strong> <span th:text="${name}"></span></p>
+<p><strong>Email:</strong> <span th:text="${email}"></span></p>
+
+<div>
+    <img th:src="${picture}" alt="Profile Picture" width="120">
+</div>
+
+<br>
+<a href="/logout">Logout</a>
+</body>
+</html>
